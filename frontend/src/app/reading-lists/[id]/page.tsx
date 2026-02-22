@@ -45,9 +45,7 @@ export default async function ReadingListDetailPage({
           <ListChecks className="h-6 w-6 text-primary" />
           <h1 className="text-3xl font-bold">{list.name}</h1>
         </div>
-        {list.description && (
-          <p className="text-muted">{list.description}</p>
-        )}
+        {list.description && <p className="text-muted">{list.description}</p>}
         <div className="flex items-center gap-4 mt-3 text-sm text-muted">
           <span className="flex items-center gap-1">
             <BookOpen className="h-4 w-4" />

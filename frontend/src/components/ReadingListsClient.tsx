@@ -133,10 +133,7 @@ export default function ReadingListsClient({
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="flex-1 min-w-0">
-                  <Link
-                    href={`/reading-lists/${list.id}`}
-                    className="group"
-                  >
+                  <Link href={`/reading-lists/${list.id}`} className="group">
                     <div className="flex items-center gap-2">
                       <ListChecks className="h-5 w-5 text-primary" />
                       <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">

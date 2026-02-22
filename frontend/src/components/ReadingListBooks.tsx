@@ -69,10 +69,7 @@ export default function ReadingListBooks({
           key={book.id}
           className="bg-surface border border-border rounded-lg p-4 flex items-center justify-between gap-4 hover:shadow-sm transition-shadow"
         >
-          <Link
-            href={`/books/${book.id}`}
-            className="flex-1 min-w-0 group"
-          >
+          <Link href={`/books/${book.id}`} className="flex-1 min-w-0 group">
             <h3 className="font-semibold group-hover:text-primary transition-colors">
               {book.title}
             </h3>

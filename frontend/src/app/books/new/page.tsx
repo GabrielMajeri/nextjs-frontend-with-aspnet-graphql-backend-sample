@@ -1,7 +1,12 @@
 "use client";
 
 import { useMutation, useQuery } from "@apollo/client/react";
-import { ADD_BOOK, GET_BOOKS, GET_AUTHORS, GET_GENRES } from "@/graphql/operations";
+import {
+  ADD_BOOK,
+  GET_BOOKS,
+  GET_AUTHORS,
+  GET_GENRES,
+} from "@/graphql/operations";
 import type { GetAuthorsQuery, GetGenresQuery } from "@/generated/graphql";
 import { useRouter } from "next/navigation";
 import { useState } from "react";

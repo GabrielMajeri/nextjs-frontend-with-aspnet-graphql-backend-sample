@@ -1,7 +1,6 @@
 import { print, type DocumentNode } from "graphql";
 
-const GRAPHQL_URL =
-  process.env.GRAPHQL_URL ?? "http://localhost:5000/graphql";
+const GRAPHQL_URL = process.env.GRAPHQL_URL ?? "http://localhost:5000/graphql";
 
 /**
  * Server-side GraphQL fetch utility for use in React Server Components.

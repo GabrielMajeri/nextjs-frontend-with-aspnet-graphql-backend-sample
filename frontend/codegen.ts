@@ -6,10 +6,7 @@ const config: CodegenConfig = {
   documents: "src/**/*.{ts,tsx}",
   generates: {
     "src/generated/graphql.ts": {
-      plugins: [
-        "typescript",
-        "typescript-operations",
-      ],
+      plugins: ["typescript", "typescript-operations"],
       config: {
         scalars: {
           DateOnly: "string",

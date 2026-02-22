@@ -195,10 +195,7 @@ export const ADD_BOOK_TO_READING_LIST = gql`
 export const REMOVE_BOOK_FROM_READING_LIST = gql`
   ${READING_LIST_FIELDS}
   mutation RemoveBookFromReadingList($readingListId: Int!, $bookId: Int!) {
-    removeBookFromReadingList(
-      readingListId: $readingListId
-      bookId: $bookId
-    ) {
+    removeBookFromReadingList(readingListId: $readingListId, bookId: $bookId) {
       ...ReadingListFields
     }
   }

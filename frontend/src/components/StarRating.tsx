@@ -1,7 +1,12 @@
 import { Star } from "lucide-react";
 
-export default function StarRating({ rating }: { rating: number | null | undefined }) {
-  if (rating == null) return <span className="text-muted text-sm">No rating</span>;
+export default function StarRating({
+  rating,
+}: {
+  rating: number | null | undefined;
+}) {
+  if (rating == null)
+    return <span className="text-muted text-sm">No rating</span>;
 
   const full = Math.floor(rating);
   const hasHalf = rating - full >= 0.3;
@@ -13,7 +18,10 @@ export default function StarRating({ rating }: { rating: number | null | undefin
         <Star key={`f${i}`} className="h-4 w-4 fill-warning text-warning" />
       ))}
       {hasHalf && (
-        <Star className="h-4 w-4 text-warning" style={{ clipPath: "inset(0 50% 0 0)" }} />
+        <Star
+          className="h-4 w-4 text-warning"
+          style={{ clipPath: "inset(0 50% 0 0)" }}
+        />
       )}
       {Array.from({ length: empty }).map((_, i) => (
         <Star key={`e${i}`} className="h-4 w-4 text-border" />

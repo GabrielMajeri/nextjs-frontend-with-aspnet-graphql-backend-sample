@@ -15,9 +15,7 @@ export default function AuthorSearchGrid({ authors }: AuthorSearchGridProps) {
   const [search, setSearch] = useState("");
 
   const filtered = authors.filter((a) =>
-    `${a.firstName} ${a.lastName}`
-      .toLowerCase()
-      .includes(search.toLowerCase()),
+    `${a.firstName} ${a.lastName}`.toLowerCase().includes(search.toLowerCase()),
   );
 
   return (
