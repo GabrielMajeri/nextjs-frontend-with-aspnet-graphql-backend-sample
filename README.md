@@ -37,8 +37,8 @@ The interactive GraphQL IDE (Nitro) is available at the same URL in a browser.
 
 ```bash
 cd frontend
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 Open **http://localhost:3000** in your browser.
@@ -69,7 +69,7 @@ To regenerate TypeScript types after schema changes:
 ```bash
 # Ensure the backend is running first
 cd frontend
-npm run codegen
+pnpm run codegen
 ```
 
 This introspects the Hot Chocolate schema and generates typed query/mutation result types in `src/generated/graphql.ts`.
