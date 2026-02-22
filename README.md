@@ -19,7 +19,7 @@ A full-stack digital bookstore/library management application showcasing the int
 ## Prerequisites
 
 - [.NET 10 SDK](https://dotnet.microsoft.com/download) (or later)
-- [Node.js 20+](https://nodejs.org/) with npm
+- [Node.js 20+](https://nodejs.org/) with `pnpm`
 
 ## Quick Start
 
@@ -27,11 +27,11 @@ A full-stack digital bookstore/library management application showcasing the int
 
 ```bash
 cd backend/BookStore.Api
-dotnet run --urls "http://localhost:5000"
+dotnet run
 ```
 
 The GraphQL endpoint will be available at **http://localhost:5000/graphql**
-The interactive GraphQL IDE (Banana Cake Pop) is at the same URL in a browser.
+The interactive GraphQL IDE (Nitro) is available at the same URL in a browser.
 
 ### 2. Start the Frontend
 
@@ -76,7 +76,7 @@ This introspects the Hot Chocolate schema and generates typed query/mutation res
 
 ## Sample GraphQL Queries
 
-Try these in the Banana Cake Pop IDE at http://localhost:5000/graphql:
+Try these in the Nitro IDE at http://localhost:5000/graphql:
 
 ```graphql
 # Get all books with their authors and genres
@@ -142,7 +142,3 @@ See [ARCHITECTURE.md](./ARCHITECTURE.md) for a detailed breakdown of:
 | GraphQL Server  | Hot Chocolate v14       | .NET GraphQL server              |
 | ORM             | Entity Framework Core   | Database access                  |
 | Database        | SQLite                  | Zero-config relational database  |
-
-## License
-
-This is a sample/demo application for educational purposes.
