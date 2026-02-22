@@ -18,6 +18,7 @@ public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(op
         {
             b.HasIndex(x => x.Isbn).IsUnique();
             b.Property(x => x.Rating).HasPrecision(3, 2);
+            b.ToTable(t => t.HasCheckConstraint("CK_Books_Rating_Range", "Rating IS NULL OR (Rating >= 0.00 AND Rating <= 5.00)"));
             b.HasOne(x => x.Author)
                 .WithMany(a => a.Books)
                 .HasForeignKey(x => x.AuthorId);

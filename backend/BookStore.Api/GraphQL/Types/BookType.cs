@@ -11,7 +11,7 @@ public class BookType : ObjectType<Book>
         descriptor.Field(b => b.Id).Description("The unique identifier of the book.");
         descriptor.Field(b => b.Title).Description("The title of the book.");
         descriptor.Field(b => b.Isbn).Description("The ISBN of the book.");
-        descriptor.Field(b => b.Rating).Description("Average reader rating (0.00 – 5.00).");
+        descriptor.Field(b => b.Rating).Description("Average reader rating (between 0.00 and 5.00 inclusive).");
 
         descriptor.Field(b => b.AuthorId).Ignore();
         descriptor.Field(b => b.GenreId).Ignore();
